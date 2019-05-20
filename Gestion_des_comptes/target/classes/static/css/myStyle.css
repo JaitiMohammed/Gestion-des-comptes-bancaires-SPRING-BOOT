@@ -1,0 +1,33 @@
+
+html
+{
+overflow-x: hidden
+}
+
+.spacer40 {
+	margin-top:40px;
+}
+
+/*.red {
+	color:red;
+}*/
+.navbar-brand{
+	font-family: 'Acme', sans-serif;
+}
+#footer {
+    clear: both;
+    margin-top: 80px;
+    width: 100%;
+    color: #35383f;
+    text-align: center;
+    padding: 8px;   
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    background-color: #fff;
+	border-top: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+	direction: ltr;
+}
+#footer a {
+	text-decoration: none;
+}

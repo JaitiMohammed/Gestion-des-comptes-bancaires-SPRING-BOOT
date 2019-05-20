@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" 
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8"/>
+<title>Ma Banque</title>
+<link rel="stylesheet" type="text/css"
+href="../static/css/bootstrap.min.css"
+th:href="@{/css/bootstrap.min.css}" />
+<link rel="stylesheet" type="text/css"
+href="../static/css/myStyle.css"
+th:href="@{/css/myStyle.css}" />
+<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet"/>
+</head>
+<body>
+
+<header>
+	<div class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<ul class="nav navbar-nav">
+			<a class="navbar-brand" th:href="@{/consulterCompte}">My Banque</a>
+				<li><a th:href="@{/operations}">Operations</a></li>
+				<li><a th:href="403.html">Comptes</a></li>
+				<li><a th:href="403.html">Clients</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right" style="font-family: 'Acme', sans-serif;">
+				<li><a th:href="@{/login?logout}">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+
+<section layout:fragment="content"></section>
+
+<footer>
+<div id="footer">
+  Copyright &copy; 2019 | <a href="https://www.jaitimohammed.online" title="cliquez sur le lien pour acceder a notre site web">Jaiti Mohammed Développeur </a> - Système de gestion des comptes bancaires 
+</div>
+</footer>
+
+</body>
+</html>
